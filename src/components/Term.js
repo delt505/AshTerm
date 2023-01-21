@@ -8,7 +8,7 @@ export default function Term() {
     const cmds = commands.commands
     const owrs = commands.overwrites
     const terminal = React.createRef()
-    const [prompt, setPrompt] = React.useState('you@/Delta:~$ ')
+    const [prompt, setPrompt] = React.useState('user@/Delta:~$ ')
     const [home, sethome] = React.useState('Delta')
     const [dir, setdir] = React.useState({
         'Delta': []
