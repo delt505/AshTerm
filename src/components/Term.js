@@ -20,7 +20,7 @@ export default function Term() {
                 "Loading...",
                 "you cant see in the dark. turn them on.",
                 "---",
-                "try starting with 'lights' (〜￣▽￣)〜",
+                "try starting with 'lights' (if on mobile this will be scuffed)",
                 "---",
             ]}
             commands={{
