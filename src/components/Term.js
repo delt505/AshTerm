@@ -8,22 +8,19 @@ export default function Term() {
     const cmds = commands.commands
     const owrs = commands.overwrites
     const terminal = React.createRef()
-    const [prompt, setPrompt] = React.useState('you@/ashterm:~$ ')
-    const [home, sethome] = React.useState('ashterm')
+    const [prompt, setPrompt] = React.useState('you@/Delta:~$ ')
+    const [home, sethome] = React.useState('Delta')
     const [dir, setdir] = React.useState({
-        'ashterm': []
+        'Delta': []
     })
     return (
         <Terminal
             ref={terminal}
             welcomeMessage={[
-                "Welcome to ashterm!",
+                "Loading...",
+                "you cant see in the dark. turn them on.",
                 "---",
-                "This is a terminal style website made with React.",
-                "---",
-                "Type 'help' to see a list of commands.",
-                "---",
-                "try starting with 'cat' (〜￣▽￣)〜",
+                "try starting with 'lights' (〜￣▽￣)〜",
                 "---",
             ]}
             commands={{
@@ -100,9 +97,9 @@ export default function Term() {
                         }
                     }
                 },
-                help: {
+                lights: {
                     description: 'List all available commands',
-                    usage: 'help',
+                    usage: 'lights',
                     fn: () => {
                         return `
                             ${Object.keys(owrs).map(cmd => `${cmd}${" ".repeat(12-cmd.length)} | ${owrs[cmd].description}${" ".repeat(39-owrs[cmd].description.length)} | ${owrs[cmd].usage}`).join('\n')}
