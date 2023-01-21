@@ -17,6 +17,13 @@ export default {
         //         return "fetching cat...\ncat fetched successfully!"
         //     }
         // },
+        blog: {
+            description: 'read my blog',
+            usage: 'blog',
+            fn: () => {
+                return "I see how it is. you want to do things the hard way. HERE https://delt.gay/blog"
+            }
+        },
         about: {
             description: 'About Me.',
             usage: 'about',

@@ -18,9 +18,9 @@ export default function Term() {
             ref={terminal}
             welcomeMessage={[
                 "Loading...",
-                "you cant see in the dark. turn them on.",
+                "you cant see in the dark. turn the lights on.",
                 "---",
-                "try starting with 'lights' (if on mobile this will be scuffed)",
+                "Hint: to turn on lights use the 'lights' command (if on mobile this will be scuffed)",
                 "---",
             ]}
             commands={{
