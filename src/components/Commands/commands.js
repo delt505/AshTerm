@@ -21,7 +21,8 @@ export default {
             description: 'read my blog',
             usage: 'blog',
             fn: () => {
-                return "I see how it is. you want to do things the hard way. HERE https://delt.gay/blog"
+                window.open('https://deltlxblog.medium.com/', '_blank')
+                return "opening twitter handle..."
             }
         },
         about: {

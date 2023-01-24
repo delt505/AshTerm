@@ -84,7 +84,7 @@ export default function Term() {
                     description: 'Opens my Twitter Handle.',
                     usage: 'twitter',
                     fn: () => {
-                        window.open('https://twitter.com/', '_blank')
+                        window.open('https://twitter.com/d_ltalx', '_blank')
                         return "opening twitter handle..."
                     }
                 },
