@@ -80,6 +80,14 @@ export default function Term() {
                     }
 
                 },
+                twitter: {
+                    description: 'Opens my Twitter Handle.',
+                    usage: 'twitter',
+                    fn: () => {
+                        window.open('https://twitter.com/', '_blank')
+                        return "opening twitter handle..."
+                    }
+                },
                 mkdir: {
                     description: 'Make a directory',
                     usage: 'mkdir <directory>',
